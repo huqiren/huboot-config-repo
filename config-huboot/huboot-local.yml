@@ -61,3 +61,11 @@ jwt:
   secret: mySecret
   expiration: 21600 #2小时
   tokenHead: "Bearer "
+
+pay:
+  pingpp:
+    apiKey:
+    appId:
+    privateKeyFilePath: pingpp/zchz_rsa_private_key.pem
+    pubKeyPath: pingpp/pingpp_public_key.pem
+    successUrl: ${app.domain.wechat}/pay/aliPaySuccess?isWx=true
