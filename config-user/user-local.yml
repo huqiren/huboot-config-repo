@@ -1,0 +1,46 @@
+datasource:
+  mysql:
+    url: jdbc:log4jdbc:mysql://10.200.157.145:3306/xiehua_dev?useUnicode=true&autoReconnect=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    username: wycadmin
+    password: Wycadmin2018
+    driverclass: net.sf.log4jdbc.DriverSpy
+eureka:
+  defaultZone: http://127.0.0.1:9001/eureka/
+wechat:
+  open:
+    componentAppId: wx37c1c1f2c6f91ff9
+    componentSecret: caaa0af543b0a62cc6b41cda295d963c
+    componentToken: xiehua_token
+    componentAesKey: BAhcGqYgDX7LLYo5TgMZLuDQYwb9fuHoW4PRyX2UaUo
+redis:
+  database: 1
+  host: 10.200.157.145
+  port: 6379
+  password: Wyczchzint2018
+domain:
+  wycshop: http://dev-wyc.zchz.com
+  wycminiapp:
+    requestdomain: https://dev-api1.zchz.com
+    wsrequestdomain: https://dev-api1.zchz.com
+    uploaddomain: https://dev-api1.zchz.com
+    downloaddomain: https://file1.zchz.com
+baidu:
+  ocr:
+    appId: 11185081
+    secretID: GtZxurT7rB9MnjqjIDdPrzkI
+    secretKey: dTuwVA0j9YVI3aXyCLZTApCxooAWDd6x
+idCardCertification:
+  open: false
+idCardAndDriverLic:
+  open: false
+wxmp:
+  menu:
+    menuTempalteList:
+      - type: commission
+        name: 我要hah
+        displayname: 我要成rr
+        url: pages/commission/index
+      - type: driver
+        name: 我要nicai
+        displayname: 我要q司机
+        url: pages/marketing/driver/driver
