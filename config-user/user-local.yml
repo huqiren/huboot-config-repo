@@ -5,7 +5,7 @@ datasource:
     password: Wycadmin2018
     driverclass: net.sf.log4jdbc.DriverSpy
 eureka:
-  defaultZone: http://127.0.0.1:9001/eureka/
+  url: http://eureka:eureka123@127.0.0.1:7210/eureka/
 wechat:
   open:
     componentAppId: wx37c1c1f2c6f91ff9
