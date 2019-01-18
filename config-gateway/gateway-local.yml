@@ -1,2 +1,8 @@
 eureka:
   url: http://eureka:eureka123@127.0.0.1:7210/eureka/
+redis:
+  database: 0
+  host: 10.200.157.139
+  port: 6379
+  password: Zchzredis2017
+  model: local
