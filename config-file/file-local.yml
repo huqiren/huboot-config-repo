@@ -1,0 +1,15 @@
+datasource:
+  mysql:
+    url: jdbc:log4jdbc:mysql://10.200.157.145:3306/xiehua_dev?useUnicode=true&autoReconnect=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    username: wycadmin
+    password: Wycadmin2018
+    driverclass: net.sf.log4jdbc.DriverSpy
+eureka:
+  defaultZone: http://127.0.0.1:9001/eureka/
+aliyun:
+  oss:
+    out-endpoint: http://oss-cn-hangzhou.aliyuncs.com
+    internal-endpoint: http://oss-cn-hangzhou.aliyuncs.com
+    bucket-name: xiehua-dev-1
+file:
+  domain: https://file1.zchz.com

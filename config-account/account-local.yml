@@ -1,0 +1,24 @@
+eureka:
+  defaultZone: http://127.0.0.1:9001/eureka/
+datasource:
+  mysql:
+    url: jdbc:log4jdbc:mysql://10.200.157.145:3306/xiehua_dev?useUnicode=true&autoReconnect=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    username: wycadmin
+    password: Wycadmin2018
+    driverclass: net.sf.log4jdbc.DriverSpy
+redis:
+  database: 1
+  host: 10.200.157.145
+  port: 6379
+  password: Wyczchzint2018
+yibao:
+  notify:
+    url:
+      #入网回调
+      reg: https://dev-api1.zchz.com/account-service/notify/account/sub_account/yibao_account_callback
+      #支付回调
+      pay: https://dev-api1.zchz.com/account-service/notify/account/payment/order/yibao_pay_callback
+      #退款回调
+      refund: https://dev-api1.zchz.com/account-service/notify/account/payment/yibao_refund_callback
+      #分账回调
+      divide: https://dev-api1.zchz.com/account-service/notify/account/payment/yibao_divide_callBack

@@ -1,0 +1,11 @@
+eureka:
+  defaultZone: http://127.0.0.1:9001/eureka/
+mongodb:
+  host: 10.200.157.139
+  port: 28006
+  database: wyc_dev
+  username: dev
+  password: dev
+api:
+  username: task
+  password: 123456
